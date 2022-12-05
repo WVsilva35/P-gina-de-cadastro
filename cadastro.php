@@ -6,14 +6,14 @@
  $email=$_POST[ 'email'];
  $telefone=$_POST[ 'telefone'];
 
- $sql="INSERT INTO cadastros(nome, CPF, email, telefone) 
- VALUES ( '$nome', '$CPF', '$email', '$telefone')";
+ $sql="INSERT INTO cadastros(Nome, CPF, email, telefone) 
+ VALUES ('$Nome', '$CPF', '$email', '$telefone')";
 
-if(mysql_querry($conexao, $sql)) {
+if(mysqli_query($conexao, $sql)) {
     echo "Usuário cadastrado";
 }
     else {
-        echo"erro".mysqli_connect_error($conexao);
+        echo "erro".mysqli_connect_error($conexao);
     }
     mysqli_close($conexao);
     ?>

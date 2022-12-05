@@ -10,20 +10,22 @@
 </head>
 
 <body>
-    <form action="cadastro.php" method="post">
-        <!--back and-->
-        <div class="container">
-            <div class="form-image">
-                <img src="img/undraw_absorbed_in_re_ymd6.svg">
-            </div>
-            <div class="form">
 
-                <div class="form-header">
-                    <div class="title">
-                        <h1>Cadastre-se</h1>
+    <!--back and-->
+    <div class="container">
+        <div class="form-image">
+            <img src="img/undraw_absorbed_in_re_ymd6.svg">
+        </div>
+        <div class="form">
 
-                        <div class="imput-group">
+            <div class="form-header">
+                <div class="title">
+                    <h1>Cadastre-se</h1>
+
+                    <div class="imput-group">
+                        <form action="conexao.php" method="post">
                             <div class="imput-box">
+
                                 <label for="name">Nome</label>
                                 <input id="name" type="text" name="name" placeholder="digite seu nome" required>
                             </div>
@@ -40,22 +42,23 @@
                                 <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
                             </div>
 
+                        </form>
 
-                        </div>
+                    </div>
 
-                        <div class="continue-button">
-                            <button> <a href="cadastro.php">
-                                    <!--back and--> Continuar
-                                </a></button>
+                    <div class="continue-button">
+                        <button> <a href="conexao.php">
+                                <!--back and--> Continuar
+                            </a></button>
 
-                        </div>
-
-    </form>
-
+                    </div>
 
 
-    </div>
-    </div>
+
+
+
+                </div>
+            </div>
 
 </body>
 
